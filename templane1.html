@@ -9,6 +9,21 @@
 </head>
 <body>
 <ul class="menu"></ul>
-<script src="main.js"></script>
+<script >
+
+    // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
+    // Завдання робити через цикли.
+    const arr= ['Main','Products','About us','Contacts'];
+    let ul=document.getElementsByClassName('menu')[0];
+
+    for (const ulElement of arr) {
+        let li=document.createElement('li');
+        li.innerText=`${ulElement}`;
+        ul.append(li);
+    }
+
+
+</script>
+
 </body>
 </html>
